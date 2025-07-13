@@ -79,7 +79,7 @@ public class NumberGameView extends View implements MediaPlayer.OnCompletionList
 	private final int GAME_FPS = 60;
 	private final int GAME_FPS_PER = 16;
 	private final int PARENTHESESRATE = 8;
-	private final int ANSWER_WAIT_FRAME = 10;
+	private final int ANSWER_WAIT_FRAME = 15;
 	private final int SELECT_LEVEL_WAIT_FRAME = 8;
 	private final int RESULT_WAIT_FRAME = 8;
 	
@@ -306,6 +306,15 @@ public class NumberGameView extends View implements MediaPlayer.OnCompletionList
 				
 				mPaint.setTextSize(mFontSize64);
 				UtilityLibrary.drawText(mPaint, canvas, mTypeString[ i ], mTypeFontPosX[ mOrientationType ][ i ], mTypeFontPosY[ mOrientationType ][ i ]);
+			}
+
+			if (mTouchCnt > 0) {
+				if( mTouchType == mAnswer ) {
+					UtilityLibrary.drawText(mPaint, canvas, "正解", mFontSize64, mFontSize40 * 9);
+				}
+				else {
+					UtilityLibrary.drawText(mPaint, canvas, "不正解", mFontSize64, mFontSize40 * 9);
+				}
 			}
 			
 			//--------------------------
