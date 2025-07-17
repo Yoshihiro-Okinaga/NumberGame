@@ -1,5 +1,5 @@
 //======================================================================
-// NumberGameActivity.java
+// MainActivity.java
 //
 // NumberGame
 //======================================================================
@@ -11,25 +11,25 @@ import android.content.res.Configuration;
 
 //======================================================================
 // 
-// NumberGameActivity
+// MainActivity
 // 
 //======================================================================
-public class NumberGameActivity extends Activity
+public class MainActivity extends Activity
 {
 	//--------------------------
 	// Data
 	//--------------------------
-	private NumberGameView mNumberGameView;
+	private MainView mMainView;
 	
 	//--------------------------
 	// onCreate
 	//--------------------------
 	@Override public void onCreate(Bundle savedInstanceState)
 	{
-		mNumberGameView = new NumberGameView(this);
+		mMainView = new MainView(this);
 		
 		super.onCreate(savedInstanceState);
-		setContentView(mNumberGameView);
+		setContentView(mMainView);
 	}
 	
 	//--------------------------

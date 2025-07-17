@@ -18,15 +18,15 @@ public class NumberGameHandler extends Handler
 	//--------------------------
 	// Data
 	//--------------------------
-	private NumberGameView mNumberGameView;
+	private MainView mMainView;
 	
 	//--------------------------
 	// コンストラクタ
 	//--------------------------
-	public NumberGameHandler(NumberGameView numberGameView)
+	public NumberGameHandler(MainView MainView)
 	{
 		super();
-		mNumberGameView = numberGameView;
+		mMainView = MainView;
 	}
 	
 	//--------------------------
@@ -34,7 +34,7 @@ public class NumberGameHandler extends Handler
 	//--------------------------
 	@Override public void handleMessage(Message msg)
 	{
-		mNumberGameView.update();
+		mMainView.update();
 	}
 	
 	//--------------------------

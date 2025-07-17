@@ -1,7 +1,7 @@
 //======================================================================
-// NumberGameView.java
+// MainView.java
 // 
-// NumberGameView
+// MainView
 //======================================================================
 package com.NumberGame;
 
@@ -26,10 +26,10 @@ import java.lang.Math;
 
 //======================================================================
 // 
-// NumberGameView
+// MainView
 // 
 //======================================================================
-public class NumberGameView extends View implements MediaPlayer.OnCompletionListener
+public class MainView extends View implements MediaPlayer.OnCompletionListener
 {
 	//----------------------------------------------------------------------
 	// 
@@ -184,7 +184,7 @@ public class NumberGameView extends View implements MediaPlayer.OnCompletionList
 	//--------------------------
 	// コンストラクタ
 	//--------------------------
-	public NumberGameView(Context context)
+	public MainView(Context context)
 	{
 		super(context);
 		
